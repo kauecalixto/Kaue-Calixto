@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "outDir": "./dist",          // Saída para os arquivos compilados
+    "rootDir": "./src",          // Diretório de origem
+    "target": "ES6",             // Definindo o alvo para ES6
+    "module": "commonjs",        // Módulo para compatibilidade com Node.js
+    "jsx": "react",              // Suporte ao JSX
+    "strict": true,              // Verificações rigorosas de tipo
+    "lib": ["es2015", "dom"],    // Bibliotecas modernas
+    "esModuleInterop": true,     // Compatibilidade de módulos
+    "skipLibCheck": true         // Ignora a verificação de tipos de bibliotecas
+  },
+  "include": ["src/**/*"],       // Inclui todos os arquivos .ts e .tsx
+  "exclude": ["node_modules"],   // Exclui node_modules
 }
