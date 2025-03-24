@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",          
+    "rootDir": "./src",          
+    "target": "ES6",             
+    "module": "es2020",          
+    "moduleResolution": "node",  // Adiciona esta linha
+    "jsx": "react",              
+    "strict": true,              
+    "lib": ["es2015", "dom"],    
+    "esModuleInterop": true,     
+    "skipLibCheck": true         
+  },
+  "include": ["src/**/*"],       
+  "exclude": ["node_modules"]    
+}
